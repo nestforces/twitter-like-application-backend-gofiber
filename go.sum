@@ -1,0 +1,12 @@
+github.com/gofiber/fiber/v2 v2.7.1 h1:zEyPcRwNo7RFoLnBQJAWA9IVR2QbkDO3qR5Y6k9ggyM=
+github.com/gofiber/fiber/v2 v2.7.1/go.mod h1:g55VK6jBqZxXqUxvAHJl92jRZoVCHbSGJYK4nsVQX4c=
+github.com/jackc/pgx/v4 v4.14.1 h1:w3kqlQUm3M/dP3Qm6JafHGL/GN0QKj/JlTJPr2rB7MU=
+github.com/jackc/pgx/v4 v4.14.1/go.mod h1:iBv1LxgGshpuZKF9lk5ZeiHPh7KKa+UT8uRwF1XJlAM=
+github.com/spf13/viper v1.11.0 h1:Ub8/m9oWgXd2yOxZxL+YFphfEc3LKtDL7ZG+y5v8YxM=
+github.com/spf13/viper v1.11.0/go.mod h1:HkBSyFbR4yA4gsXVpHyCjklMlY+XNU2tXDN7zhMDChk=
+golang.org/x/crypto v0.0.0-20220406232003-ec9825707a14 h1:kqA2JvZU4oBoDbqtQ8EZRV45a1YzzOFIxFJsWqYl4Zc=
+golang.org/x/crypto v0.0.0-20220406232003-ec9825707a14/go.mod h1:BYx/7BDR7KT2ZPHeSwNcxJtWg5vuxwAyX46Z0eEPe+k=
+golang.org/x/sys v0.0.0-20220407165917-6e3b80f04c7b h1:2XJzkv29Q13zrM1m7sqosdsV3I4s7GBh28WymTzy2C0=
+golang.org/x/sys v0.0.0-20220407165917-6e3b80f04c7b/go.mod h1:1n0EC/D1eqebFNSzEYShjTgI7NPA7qR9f1fU3kPeIvc=
+golang.org/x/text v0.3.8 h1:qYPf9r8e7jIhScJkSQHBoaxdZZlfy0N2eqcMLSPJkT0=
+golang.org/x/text v0.3.8/go.mod h1:p34ug94O6vEM+8EoBDHOQ+L62pTw/4KIoCYDdJR5Xdk=
