@@ -25,8 +25,8 @@ Before running the application, make sure you have the following installed:
 1. Clone this repository:
 
    ```bash
-   git clone <repository_url>
-   cd twitter-backend
+   git clone https://github.com/nestforces/twitter-like-backend.git
+   cd twitter-like-backend
    ```
 
 2. Install dependencies:
