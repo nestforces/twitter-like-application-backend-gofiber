@@ -22,3 +22,17 @@ func ChangeUsername(c *fiber.Ctx) error {
 
     return c.Status(fiber.StatusOK).JSON(fiber.Map{"message": "Username updated successfully"})
 }
+
+func UpdateProfile(c *fiber.Ctx) error {
+    userID := c.Locals("user_id").(int)
+    bio := c.FormValue("bio")
+    profilePicture := c.FormValue("profile_picture")
+
+    sql := `UPDATE users SET bio = $1, profile_picture = $2 WHERE user_id = $3`
+    _, err := database.DB.Exec(context.Background(), sql, bio, profilePicture, userID)
+    if err != nil {
+        return c.Status(fiber.StatusInternalServerError).JSON(fiber.Map{"error": "Failed to update profile"})
+    }
+
+    return c.Status(fiber.StatusOK).JSON(fiber.Map{"message": "Profile updated successfully"})
+}

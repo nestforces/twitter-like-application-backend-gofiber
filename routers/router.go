@@ -19,13 +19,15 @@ func SetupRoutes(app *fiber.App) {
     api.Use(middlewares.AuthRequired())
 
     // User routes
-	api.Patch("/user/change-username", handlers.ChangeUsername)
+    api.Patch("/user/change-username", handlers.ChangeUsername)
+    api.Patch("/user/update-profile", handlers.UpdateProfile)
 	api.Post("/follow/:id", handlers.FollowUser)
     api.Delete("/unfollow/:id", handlers.UnfollowUser)
 
     // Tweet routes
     api.Post("/tweets", handlers.CreateTweet)
     api.Get("/tweets", handlers.GetTweets)
+    api.Post("/tweets/:id/reply", handlers.ReplyToTweet)
 
     // Like routes
     api.Post("/tweets/:id/like", handlers.LikeTweet)
@@ -34,4 +36,11 @@ func SetupRoutes(app *fiber.App) {
     // Retweet routes
     api.Post("/tweets/:id/retweet", handlers.Retweet)
     api.Delete("/tweets/:id/unretweet", handlers.RemoveRetweet)
+
+    // Search routes
+    api.Get("/search", handlers.SearchTweets)
+
+     // Direct Message routes
+     api.Post("/dm", handlers.SendDirectMessage)
+     api.Get("/dm/:id", handlers.GetDirectMessages)
 }

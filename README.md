@@ -9,6 +9,10 @@ This is a backend implementation for a Twitter-like application built using Go F
 - Follows: Users can follow and unfollow other users
 - Likes: Users can like and unlike tweets
 - Retweets: Users can retweet and unretweet tweets
+- Profile Management: Users can update their profile information, such as bio and profile picture.
+- Tweet Replies: Users can reply to tweets.
+- Search Tweets: Users can search for tweets by keywords.
+- Direct Messaging: Users can send and receive direct messages.
 
 ## Prerequisites
 
@@ -59,6 +63,7 @@ Before running the application, make sure you have the following installed:
 ### Users
 
 - `PATCH /api/user/change-username`: Change the username of the authenticated user.
+- `PATCH /api/user/update-profile`: Update the profile information of the authenticated user.
 - `POST /api/follow/:id`: Follow a user.
 - `DELETE /api/unfollow/:id`: Unfollow a user.
 
@@ -66,6 +71,7 @@ Before running the application, make sure you have the following installed:
 
 - `POST /api/tweets`: Create a new tweet.
 - `GET /api/tweets`: Get all tweets.
+- `POST /api/tweets/:id/reply`: Reply to a tweet.
 
 ### Likes
 
@@ -76,6 +82,21 @@ Before running the application, make sure you have the following installed:
 
 - `POST /api/tweets/:id/retweet`: Retweet a tweet.
 - `DELETE /api/tweets/:id/unretweet`: Remove a retweet.
+
+### Profile Management
+
+- `PATCH /api/user/change-username`: Change the username of the authenticated user.
+- `PATCH /api/user/update-profile`: Update the profile information of the authenticated user.
+
+### Search
+
+- `GET /api/search`: Search for tweets by keyword.
+
+### Direct Messages
+
+- `POST /api/dm`: Send a direct message.
+- `GET /api/dm/:id`: Get direct messages between two users.
+
 
 ## Middleware
 
