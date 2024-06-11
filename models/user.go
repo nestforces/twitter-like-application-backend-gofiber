@@ -11,5 +11,6 @@ type User struct {
     Bio          string    `json:"bio"`
     Location     string    `json:"location"`
     Website      string    `json:"website"`
+    Photo        string    `json:"photo"` 
     CreatedAt    time.Time `json:"created_at"`
 }
